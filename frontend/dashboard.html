@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+    .header { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .task-form { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+    .task-list { background: white; padding: 20px; border-radius: 8px; }
+    .form-group { margin-bottom: 15px; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ddd; border-radius: 4px; }
+    button { padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; border-radius: 4px; }
+    button:hover { background-color: #0056b3; }
+    .btn-danger { background-color: #dc3545; }
+    .btn-danger:hover { background-color: #c82333; }
+    .btn-secondary { background-color: #6c757d; }
+    .btn-secondary:hover { background-color: #545b62; }
+    .task-item { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 4px; display: flex; justify-content: space-between; align-items: center; }
+    .task-info { flex: 1; }
+    .task-title { font-weight: bold; margin-bottom: 5px; }
+    .task-description { color: #666; margin-bottom: 5px; }
+    .task-status { font-size: 0.9em; }
+    .task-actions { margin-left: 10px; }
+    .message { padding: 10px; margin-bottom: 15px; border-radius: 4px; }
+    .success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+    .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+    .user-info { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <h1>Task Dashboard</h1>
+        <p class="user-info">Welcome! <span id="userRole"></span></p>
+      </div>
+      <button onclick="logout()" class="btn-secondary">Logout</button>
+    </div>
+
+    <div id="message"></div>
+
+    <div class="task-form">
+      <h3>Create New Task</h3>
+      <div class="form-group">
+        <label for="taskTitle">Title:</label>
+        <input id="taskTitle" type="text" placeholder="Enter task title">
+      </div>
+      <div class="form-group">
+        <label for="taskDescription">Description:</label>
+        <textarea id="taskDescription" rows="3" placeholder="Enter task description"></textarea>
+      </div>
+      <button onclick="createTask()">Create Task</button>
+    </div>
+
+    <div class="task-list">
+      <h3>Your Tasks</h3>
+      <div id="taskList">
+        <p>Loading tasks...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>
