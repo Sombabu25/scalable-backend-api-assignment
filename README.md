@@ -2,7 +2,7 @@
 
 A scalable REST API with JWT authentication and role-based access control, built with FastAPI and SQLAlchemy.
 
-## 🚀 Features
+##  Features
 
 ### Backend (Primary Focus)
 - ✅ User registration & login with JWT authentication
@@ -30,12 +30,12 @@ A scalable REST API with JWT authentication and role-based access control, built
 - ✅ Scalable project structure
 - ✅ API versioning for future enhancements
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.8+
 - pip package manager
 
-## 🛠️ Installation
+##  Installation
 
 ### Backend Setup
 
@@ -71,7 +71,7 @@ The API will be available at `http://127.0.0.1:8000`
 
 The frontend will be available at `http://localhost:5500`
 
-## 📚 API Documentation
+##  API Documentation
 
 ### Swagger UI
 Visit `http://127.0.0.1:8000/docs` for interactive API documentation
@@ -94,7 +94,7 @@ Visit `http://127.0.0.1:8000/redoc` for alternative API documentation
 - `completed`: Boolean status
 - `owner_id`: Foreign key to Users table
 
-## 🔐 Authentication & Authorization
+##  Authentication & Authorization
 
 ### JWT Token Flow
 1. User registers or logs in
@@ -112,7 +112,7 @@ Visit `http://127.0.0.1:8000/redoc` for alternative API documentation
 - At least one lowercase letter
 - At least one digit
 
-## 🚀 API Endpoints
+##  API Endpoints
 
 ### Authentication
 - `POST /api/v1/register` - Register new user
@@ -123,7 +123,7 @@ Visit `http://127.0.0.1:8000/redoc` for alternative API documentation
 - `GET /api/v1/tasks` - Get user's tasks (authenticated)
 - `DELETE /api/v1/tasks/{task_id}` - Delete task (admin only)
 
-## 🧪 Testing
+##  Testing
 
 ### Test Users
 - **Admin**: `admin@test.com` (any valid password)
@@ -153,7 +153,7 @@ curl -X POST "http://127.0.0.1:8000/api/v1/tasks" \
   -d '{"title": "Sample Task", "description": "This is a sample task description"}'
 ```
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 project/
@@ -170,7 +170,7 @@ project/
     └── app.js              # Frontend JavaScript logic
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 - `DATABASE_URL`: SQLite database path (default: "sqlite:///./test.db")
@@ -181,7 +181,7 @@ project/
 - Easy to migrate to PostgreSQL/MySQL
 - Automatic table creation on startup
 
-## 🚀 Deployment Considerations
+##  Deployment Considerations
 
 ### Production Enhancements
 1. **Database**: Migrate to PostgreSQL or MySQL
@@ -206,11 +206,11 @@ project/
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📝 License
+##  License
 
 This project is part of a backend developer internship assignment.
 
-## 📞 Support
+##  Support
 
 For questions or issues regarding this assignment, please contact the hiring team.
 
