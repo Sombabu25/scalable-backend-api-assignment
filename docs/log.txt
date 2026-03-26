@@ -1,0 +1,31 @@
+Project Execution Log
+
+1. Backend Server:
+- FastAPI server started successfully using uvicorn
+- API accessible at http://127.0.0.1:8000/docs
+
+2. Authentication:
+- User registration tested successfully
+- Login API tested and JWT token generated
+
+3. Authorization:
+- JWT token used to access protected routes
+- Verified access control for user and admin roles
+
+4. Task Management:
+- Create task API tested successfully
+- Fetch tasks API working correctly
+- Admin delete functionality verified
+
+5. Frontend Integration:
+- Login implemented using HTML + JavaScript
+- JWT stored in localStorage
+- API calls successfully made from frontend
+- Tasks created and fetched from UI
+
+6. Error Handling:
+- Invalid login returns proper error
+- Unauthorized access returns 401 error
+
+Conclusion:
+All core functionalities tested and working as expected.
